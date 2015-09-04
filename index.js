@@ -272,6 +272,17 @@
   _.capitalize = function(str){
     return str.substr(0, 1).toUpperCase() + str.substr(1);
   };
+  _.center = curry$(function(width, char, str){
+    var lWidth, rWidth;
+    width = (width - str.length) / 2;
+    if (width > 1) {
+      lWidth = Math.ceil(width);
+      rWidth = Math.floor(width);
+      return repeat(lWidth, char) + str + repeat(rWidth, char);
+    } else {
+      return str;
+    }
+  });
   _.isArray = function(it){
     return toString$.call(it).slice(8, -1) === 'Array';
   };
