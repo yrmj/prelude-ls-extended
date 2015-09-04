@@ -6,16 +6,17 @@
   "scripts": {
     "test": "nodeunit",
     "cover": "istanbul cover ./node_modules/nodeunit/bin/nodeunit && cat ./coverage/lcov.info | node ./node_modules/coveralls/bin/coveralls.js",
-    "build": "browserify index.js -o browser.js -s _ && uglifyjs browser.js -m -c -o browser.min.js && rm browser.js"
+    "build": "browserify index.js -o browser.js -s _ && uglifyjs browser.js -m -c -o browser.min.js && rm browser.js",
+    "compile": "lsc -c index"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/farzher/prelude-ls-extended.git"
+    "url": "https://github.com/yrmj/prelude-ls-extended.git"
   },
   "author": "",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/farzher/prelude-ls-extended/issues"
+    "url": "https://github.com/yrmj/prelude-ls-extended/issues"
   },
   "dependencies": {
     "prelude-ls": "~1.1.1"
