@@ -186,11 +186,15 @@ _.in-insensitive = (a, arr) ->
 # -> str
 _.capitalize = (str) -> (str.substr 0, 1)toUpperCase! + str.substr 1
 
-
-
-
-
-
+# num, char, str -> str
+_.center = (width, char, str) -->
+    width = (width - str.length) / 2
+    if width > 1
+        l-width = Math.ceil width
+        r-width = Math.floor width
+        repeat(l-width, char) + str + repeat r-width, char
+    else
+        str
 
 ## Util
 

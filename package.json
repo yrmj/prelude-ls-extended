@@ -19,7 +19,7 @@
     "url": "https://github.com/yrmj/prelude-ls-extended/issues"
   },
   "dependencies": {
-    "prelude-ls": "~1.1.1"
+    "prelude-ls": "~1.1.2"
   },
   "devDependencies": {
     "nodeunit": "^0.9.0",
