@@ -192,7 +192,7 @@ _.center = (width, char, str) -->
     if width > 1
         l-width = Math.ceil width
         r-width = Math.floor width
-        repeat(l-width, char) + str + repeat r-width, char
+        _.repeat(l-width, char) + str + _.repeat r-width, char
     else
         str
 

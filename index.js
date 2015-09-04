@@ -278,7 +278,7 @@
     if (width > 1) {
       lWidth = Math.ceil(width);
       rWidth = Math.floor(width);
-      return repeat(lWidth, char) + str + repeat(rWidth, char);
+      return _.repeat(lWidth, char) + str + _.repeat(rWidth, char);
     } else {
       return str;
     }
